@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bárbara - Pedido de Namoro</title>
+</head>
+<body>
+    <center>
+    <div class="banner"><h1>Pedido claro de *NAMORO*</h1></div>
+    <div class="textos">
+    <h1>Oiiii, não foi você que pediu um<br>namorado? Lindo, fiel, gentil, e tarado?😍</h1>
+    <h2>Esse site foi feito pra você e eu <br>relembrarmos de todos os momentos nossos juntos.
+    <br><br>Eu te amo muito!</h2>
+    <br>
+</div>
+    <img src="./imagens/barbara_matheusjacarandas.png">
+    <br>
+    <a href="galeria.html"><button class="btn">Galeria de Fotos</button></a>
+    <br>
+    <div class="pedido">
+    <h1>Você aceita namorar comigo?</h1>
+    <button class="btn" id="sim">Sim</button>
+    <button class="btn" id="nao">Não</button>
+</div>
+<script>
+    var nao = document.getElementById("nao");
+    nao.addEventListener("click", function() {
+        var randomX = Math.floor(Math.random() * window.innerWidth);
+        var randomY = Math.floor(Math.random() * window.innerHeight);
+        nao.style.position = "absolute";
+        nao.style.top = randomY + "px";
+        nao.style.left = randomX + "px";
+    });
+
+    var sim = document.getElementById("sim");
+    sim.addEventListener("click", function() {
+        window.location.href = "https://youtu.be/OQd3VYHtUVE?si=Nrk1gwFa1zPsgEqy&t=1485";
+    });
+</script>
+</center>
+</body>
+</html>
